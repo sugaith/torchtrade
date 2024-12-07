@@ -1,2 +1,8 @@
 
 .idea/
+
+torchtrade/__pycache__/
+
+torchtrade/core/__pycache__/
+
+torchtrade/feed/core/__pycache__/
