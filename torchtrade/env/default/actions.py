@@ -8,17 +8,17 @@ from gymnasium.spaces import Space, Discrete
 from torchtrade.core import Clock
 from torchtrade.env.generic import ActionScheme, TradingEnv
 from torchtrade.oms.instruments import ExchangePair
+from torchtrade.oms.orders.create import proportion_order, risk_managed_order
+
 from torchtrade.oms.orders import (
     Broker,
     Order,
     OrderListener,
     OrderSpec,
-    proportion_order,
-    risk_managed_order,
     TradeSide,
     TradeType
 )
-from torchtrade.oms.wallets import Portfolio
+from torchtrade.oms.wallets.portfolio import Portfolio
 
 
 class TorchTradeActionScheme(ActionScheme):

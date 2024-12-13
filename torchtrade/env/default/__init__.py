@@ -11,7 +11,7 @@ from . import renderers
 from torchtrade.env.generic import TradingEnv
 from torchtrade.env.generic.components.renderer import AggregateRenderer
 from torchtrade.feed.core import DataFeed
-from torchtrade.oms.wallets import Portfolio
+from torchtrade.oms.wallets.portfolio import Portfolio
 
 
 def create(portfolio: 'Portfolio',

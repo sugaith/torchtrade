@@ -11,7 +11,7 @@ from random import randrange
 
 
 from torchtrade.feed.core import Stream, NameSpace, DataFeed
-from torchtrade.oms.wallets import Wallet
+from torchtrade.oms.wallets.wallet import Wallet
 from torchtrade.env.generic import Observer
 from collections import OrderedDict
 

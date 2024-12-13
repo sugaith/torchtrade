@@ -2,7 +2,7 @@ import logging
 from decimal import Decimal
 
 from torchtrade.core import Clock
-from torchtrade.oms.wallets import Wallet
+from torchtrade.oms.wallets.wallet import Wallet
 from torchtrade.oms.exchanges import ExchangeOptions
 from torchtrade.oms.orders import Order, Trade, TradeType, TradeSide
 

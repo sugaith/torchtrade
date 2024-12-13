@@ -6,3 +6,7 @@ torchtrade/__pycache__/
 torchtrade/core/__pycache__/
 
 torchtrade/feed/core/__pycache__/
+
+torchtrade/oms/instruments/__pycache__/
+
+*.pyc

@@ -13,7 +13,7 @@
 # limitations under the License
 
 from torchtrade.oms.instruments import ExchangePair
-from torchtrade.oms.wallets import Portfolio
+from torchtrade.oms.wallets.portfolio import Portfolio
 from torchtrade.oms.orders import Order, OrderSpec, TradeSide, TradeType
 from torchtrade.oms.orders.criteria import Stop, Limit
 
