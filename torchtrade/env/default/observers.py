@@ -45,8 +45,10 @@ def _create_wallet_source(wallet: 'Wallet', include_worth: bool = True) -> 'List
 
         if include_worth:
             price = Stream.select(wallet.exchange.streams(), lambda node: node.name.endswith(symbol))
-            worth = price.mul(total_balance).rename('worth')
-            streams += [worth]
+            worth = price.current * total_balance.obj.balance
+            worth_sensor = Stream.sensor(worth, lambda node: node).rename('worth')
+            # worth = price.current.mul(total_balance).rename('worth')
+            streams += [worth_sensor]
 
     return streams
 
